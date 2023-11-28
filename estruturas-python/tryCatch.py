@@ -5,5 +5,5 @@ try:
     num1 = int(num1)
     num2 = int(num2)
     print("Soma é igual a: ", num1 + num2)
-except:
-    print("Erro ao converter os valores para inteiro")
+except ValueError as erro:
+    print("Erro ao converter os valores para inteiro:", erro)
