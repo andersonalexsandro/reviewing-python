@@ -1,0 +1,6 @@
+from itertools import combinations
+
+pessoas = ["Anderson", "Beatriz", "Ciclano", "Deltrano", "Celçano"]
+
+for grupo in combinations(pessoas, 2):
+    print(grupo)
