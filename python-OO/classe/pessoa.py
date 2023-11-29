@@ -1,3 +1,5 @@
+from random import randint 
+
 class Pessoa:
 
     #variável estática
@@ -16,3 +18,10 @@ class Pessoa:
     def por_ano_nascimento(cls, nome, ano_nascimento):
         idade = cls.ano_atual - ano_nascimento
         return cls(nome, idade)
+    
+    @staticmethod
+    def gera_id():
+        return randint(1,10)
+
+pessoa = Pessoa()
+pessoa.nome
